@@ -25,7 +25,8 @@ Press **a** in the Expo terminal to launch on an Android emulator. Alternatively
 npx expo start --android
 
 
-## Project structure 
+## Project structure
+```text 
 src/
 ├── app/
 │   └── index.tsx                  # HomeScreen, state and CRUD handlers
@@ -48,6 +49,7 @@ src/
 └── data/
     ├── Expense.js                # Expense field definitions
     └── testData                  # Initial sample expenses
+```
 > Verify actual filenames and extensions against your repository. An earlier version of the code used the spelling DateUtlils in an import.
 
 ## Application components
@@ -198,7 +200,7 @@ ExpenseFormBuilder supplies expense-specific field definitions to the generic fo
       Ensure cards matches the CardItem type declared in your current CardDeck.tsx.
 
 ## Application data flow
-
+```text
 HomeScreen (index.tsx)
 ├── ExpenseDisplay
 │    └── ExpenseList
@@ -213,7 +215,7 @@ HomeScreen (index.tsx)
 └── Data
     ├──Expense.js    
     └──testData.js
-
+```
 1. The user selects **Add Expense** or an existing expense.
 2. ExpenseForm displays the appropriate initial values.
 3. FormBuilder validates and submits the values.
